@@ -1,4 +1,4 @@
-name: HL-Linter
+name: Super-Linter
 
 on: push
 
@@ -10,8 +10,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run HL-Linter
-        uses: github/hl_linter@v4
+      - name: Run Super-Linter
+        uses: github/super-linter@v4
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
